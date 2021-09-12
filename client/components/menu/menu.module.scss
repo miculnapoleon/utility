@@ -1,0 +1,40 @@
+.mainContainer {
+    position: relative;
+    height: 100vh;
+    border: 1px solid black;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding-top: 40px;
+    transition: .5s ease-in;
+
+    .button {
+        height: 30px;
+        width: 30px;
+        position: relative;
+        left: 100%;
+        cursor: pointer;
+    }
+
+    .list {
+        transition: .5s ease;
+    }
+   
+}
+
+.open {
+    left: 0%;
+    width: 200px;
+
+    & > .listContainer {
+        padding-left: 40px;
+    }
+}
+
+.closed {
+    left: -5%;
+    width: 57px;
+
+    & > .listContainer {
+        padding-left: 0px;
+    }
+}
