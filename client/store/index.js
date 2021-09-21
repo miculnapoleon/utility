@@ -1,9 +1,9 @@
-import {reducer} from './reducers';
-import {combineReducers, applyMiddleware, createStore} from 'redux';
+import { combineReducers, applyMiddleware, createStore } from 'redux';
 import thunkMiddleware from "redux-thunk";
+import recipeReducer from './reducers/recipe';
 
 const rootReducer = combineReducers({
-    recipe: reducer
+    recipe: recipeReducer
 });
 
 

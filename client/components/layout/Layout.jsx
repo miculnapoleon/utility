@@ -1,10 +1,19 @@
 import React from 'react';
-import styles from './layout.module.scss'
 
 const Layout = ({children}) => {
     return (
-        <div className={styles.container}>
+        <div >
             {children}
+            <style global jsx>{`
+                html,
+                body,
+                body > div:first-child,
+                div#__next,
+                div#__next > div {
+                    height: 100%;
+                    margin: 0;
+                }
+            `}</style>
         </div>
     )
 }
